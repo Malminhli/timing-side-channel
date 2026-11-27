@@ -1,0 +1,69 @@
+[exp4] builtin_eq           C1_random_vs_random  run 0: t =    -0.27  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 1: t =    -0.48  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 2: t =     0.01  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 3: t =     0.70  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 4: t =     0.28  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 5: t =     0.33  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 6: t =     1.37  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 7: t =    -0.36  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 8: t =    -0.45  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C1_random_vs_random  run 9: t =    -2.05  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 0: t =    -1.84  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 1: t =    -2.52  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 2: t =    -1.78  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 3: t =    -1.66  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 4: t =    -2.22  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 5: t =    -1.46  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 6: t =    -2.15  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 7: t =    -1.00  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 8: t =    -0.52  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C2_fixed_vs_random   run 9: t =    -0.74  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 0: t =    -0.46  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 1: t =    -0.67  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 2: t =    -1.49  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 3: t =     1.97  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 4: t =     0.74  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 5: t =    -1.63  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 6: t =     1.30  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 7: t =     0.47  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 8: t =    -0.07  median diff =   0.00 ns  no leak detected
+[exp4] builtin_eq           C3_fixed_vs_fixed    run 9: t =    -1.40  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 0: t =     0.65  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 1: t =     0.43  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 2: t =    -0.45  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 3: t =     1.57  median diff =   0.02 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 4: t =     0.30  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 5: t =    -1.01  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 6: t =    -1.98  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 7: t =     0.51  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 8: t =    -1.67  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C1_random_vs_random  run 9: t =    -0.23  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 0: t =    -8.68  median diff =  -0.20 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 1: t =    -7.09  median diff =  -0.02 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 2: t =   -13.52  median diff =  -0.20 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 3: t =   -13.42  median diff =  -0.60 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 4: t =   -14.95  median diff =  -0.22 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 5: t =    -8.08  median diff =  -0.20 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 6: t =   -10.66  median diff =  -0.20 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 7: t =   -12.67  median diff =  -0.20 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 8: t =    -9.72  median diff =  -0.22 ns  LEAK
+[exp4] hmac_compare_digest  C2_fixed_vs_random   run 9: t =    -6.32  median diff =  -0.18 ns  LEAK
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 0: t =     0.95  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 1: t =     1.17  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 2: t =    -0.33  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 3: t =    -1.17  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 4: t =     1.70  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 5: t =     1.10  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 6: t =     0.43  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 7: t =    -0.34  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 8: t =    -1.37  median diff =   0.00 ns  no leak detected
+[exp4] hmac_compare_digest  C3_fixed_vs_fixed    run 9: t =     0.41  median diff =   0.00 ns  no leak detected
+
+[exp4] summary (repeats with |t| > 4.5)
+  builtin_eq           C1_random_vs_random  0/10   t from -2.05 to 1.36
+  builtin_eq           C2_fixed_vs_random   0/10   t from -2.52 to -0.53
+  builtin_eq           C3_fixed_vs_fixed    0/10   t from -1.63 to 1.97
+  hmac_compare_digest  C1_random_vs_random  0/10   t from -1.98 to 1.57
+  hmac_compare_digest  C2_fixed_vs_random   10/10   t from -14.95 to -6.32
+  hmac_compare_digest  C3_fixed_vs_fixed    0/10   t from -1.37 to 1.70
+[exp4] done -> results

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite it as below."
+type: software
+title: "Measuring Timing Side-Channel Leakage in String Comparison: A Practical Replication in Python"
+abstract: >-
+  Code, raw results and paper for an educational replication of timing
+  side-channel leakage in string comparison in Python. Three comparison
+  functions (a hand-written early-exit loop, the built-in == operator and
+  hmac.compare_digest) are studied with a leakage characterisation, a
+  fixed-vs-random Welch's t-test (TVLA), an end-to-end secret-recovery
+  attack and control tests.
+authors:
+  - family-names: Alminhali
+    given-names: Mohammed Saeed
+repository-code: "https://github.com/Malminhli/timing-side-channel"
+url: "https://github.com/Malminhli/timing-side-channel"
+license: MIT
+date-released: "2026-11-27"
+keywords:
+  - side-channel attacks
+  - timing attacks
+  - constant-time comparison
+  - TVLA
+  - Welch's t-test
+  - Python
+preferred-citation:
+  type: report
+  title: "Measuring Timing Side-Channel Leakage in String Comparison: A Practical Replication in Python"
+  authors:
+    - family-names: Alminhali
+      given-names: Mohammed Saeed
+  year: 2026
+  month: 11
+  status: preprint
+  url: "https://github.com/Malminhli/timing-side-channel"
+  repository-code: "https://github.com/Malminhli/timing-side-channel"

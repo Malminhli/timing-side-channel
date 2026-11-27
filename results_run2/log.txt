@@ -1,0 +1,201 @@
+
+===== exp1_leakage.py =====
+[exp1] measuring naive_compare ...
+         slope = 18.11 ns per correct char
+[exp1] measuring builtin_eq ...
+         slope = -0.00 ns per correct char
+[exp1] measuring hmac_compare_digest ...
+         slope = 0.00 ns per correct char
+[exp1] done -> /home/mohammed/timing-side-channel/results_run2
+
+===== exp2_tvla.py =====
+[exp2] naive_compare          run 0: t =   2951.28  median diff =  267.08 ns  LEAK
+[exp2] naive_compare          run 1: t =   4496.98  median diff =  265.28 ns  LEAK
+[exp2] naive_compare          run 2: t =   3832.30  median diff =  264.88 ns  LEAK
+[exp2] naive_compare          run 3: t =   4982.63  median diff =  287.72 ns  LEAK
+[exp2] naive_compare          run 4: t =   5141.35  median diff =  284.92 ns  LEAK
+[exp2] naive_compare          run 5: t =   3670.56  median diff =  267.30 ns  LEAK
+[exp2] naive_compare          run 6: t =   5012.33  median diff =  275.52 ns  LEAK
+[exp2] naive_compare          run 7: t =   4695.63  median diff =  264.28 ns  LEAK
+[exp2] naive_compare          run 8: t =   5328.29  median diff =  269.08 ns  LEAK
+[exp2] naive_compare          run 9: t =   5165.17  median diff =  272.12 ns  LEAK
+[exp2] builtin_eq             run 0: t =      1.24  median diff =    0.02 ns  no leak detected
+[exp2] builtin_eq             run 1: t =      2.09  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 2: t =      2.32  median diff =    0.02 ns  no leak detected
+[exp2] builtin_eq             run 3: t =      2.07  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 4: t =      1.58  median diff =    0.02 ns  no leak detected
+[exp2] builtin_eq             run 5: t =      1.71  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 6: t =      2.03  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 7: t =      2.16  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 8: t =      1.93  median diff =    0.00 ns  no leak detected
+[exp2] builtin_eq             run 9: t =      1.27  median diff =    0.00 ns  no leak detected
+[exp2] hmac_compare_digest    run 0: t =      2.23  median diff =    0.02 ns  no leak detected
+[exp2] hmac_compare_digest    run 1: t =      8.02  median diff =    0.20 ns  LEAK
+[exp2] hmac_compare_digest    run 2: t =      5.47  median diff =    0.20 ns  LEAK
+[exp2] hmac_compare_digest    run 3: t =      7.17  median diff =    0.20 ns  LEAK
+[exp2] hmac_compare_digest    run 4: t =      7.98  median diff =    0.02 ns  LEAK
+[exp2] hmac_compare_digest    run 5: t =      3.91  median diff =    0.20 ns  no leak detected
+[exp2] hmac_compare_digest    run 6: t =      6.10  median diff =    0.20 ns  LEAK
+[exp2] hmac_compare_digest    run 7: t =     13.41  median diff =    0.40 ns  LEAK
+[exp2] hmac_compare_digest    run 8: t =      5.16  median diff =    0.20 ns  LEAK
+[exp2] hmac_compare_digest    run 9: t =      8.29  median diff =    0.38 ns  LEAK
+[exp2] done -> /home/mohammed/timing-side-channel/results_run2
+
+===== exp3_attack.py =====
+[exp3] naive_compare          trial 0: secret=3dgig25u got=3dgig25u 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 1: secret=pv1nj5s2 got=pv1nj5s2 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 2: secret=iyjjd03a got=iyjjd03a 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 3: secret=fnw99h6h got=fnw99h6h 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 4: secret=nmnw7e3f got=nmnw7e3f 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 5: secret=uf9f1wzs got=uf9f1wzs 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 6: secret=iitryjyq got=iitryjyq 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 7: secret=wlwjmob4 got=wlwjmob4 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 8: secret=xppx55vj got=xppx55vj 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 9: secret=6z0brgr4 got=6z0brgr4 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 10: secret=5p98ibst got=5p98ibst 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 11: secret=rvvkmw3u got=rvvkmw3u 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 12: secret=gqp3uyo1 got=gqp3uyo1 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 13: secret=rrvv0tn9 got=rrvv0tn9 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 14: secret=de5psba1 got=de5psba1 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 15: secret=aw4cgy5c got=aw4cgy5c 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 16: secret=a2s513u9 got=a2s513u9 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 17: secret=tb6te7cl got=tb6te7cl 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 18: secret=wid19abg got=wid19abg 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 19: secret=vriwl1rd got=vriwl1rd 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 20: secret=8m1ms6w4 got=8m1ms6w4 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 21: secret=5cwxlst0 got=5cwxlst0 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 22: secret=8fsgkvxz got=8fsgkvxz 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 23: secret=pouaorh7 got=pouaorh7 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 24: secret=arfycv47 got=arfycv47 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 25: secret=cvcc7jf9 got=cvcc7jf9 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 26: secret=0qhqf69v got=0qhqf69v 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 27: secret=ed8pspmh got=ed8pspmh 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 28: secret=120ho52d got=120ho52d 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 29: secret=50q33f6k got=50q33f6k 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 30: secret=nlg7rrc1 got=nlg7rrc1 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 31: secret=92yztl93 got=92yztl93 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 32: secret=fq9ypbb3 got=fq9ypbb3 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 33: secret=u3l7xcws got=u3l7xcws 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 34: secret=19yo7sp6 got=19yo7sp6 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 35: secret=ceh2pxhp got=ceh2pxhp 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 36: secret=c1i3smwm got=c1i3smwm 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 37: secret=gnaz0ktw got=gnaz0ktw 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 38: secret=7458hatt got=7458hatt 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 39: secret=7fmp8q68 got=7fmp8q68 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 40: secret=ra1bu4u1 got=ra1bu4u1 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 41: secret=hlgcpvxd got=hlgcpvxd 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 42: secret=24z45n2e got=24z45n2e 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 43: secret=sx5ri1n8 got=sx5ri1n8 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 44: secret=jbe5fi5w got=jbe5fi5w 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 45: secret=gkqwy80p got=gkqwy80p 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 46: secret=1o4myogt got=1o4myogt 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 47: secret=f879s070 got=f879s070 8/8 chars SUCCESS  0.3s
+[exp3] naive_compare          trial 48: secret=0qm8vw5x got=0qm8vw5x 8/8 chars SUCCESS  0.4s
+[exp3] naive_compare          trial 49: secret=kdypvg3u got=kdypvg3u 8/8 chars SUCCESS  0.3s
+[exp3] builtin_eq             trial 0: secret=cdsmkbgd got=6l1x8l6? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 1: secret=ipcg78i7 got=7h8gyf6? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 2: secret=i1ip47ux got=1cpc9ci? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 3: secret=y4poxgj3 got=o99qx0s? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 4: secret=wrq24nnb got=8rbr9n9? 2/8 chars fail  0.1s
+[exp3] builtin_eq             trial 5: secret=u9hvp7a9 got=9k98qk7? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 6: secret=b4u0u71n got=9n9lwj0? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 7: secret=cnhcdzrb got=ih699m9? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 8: secret=axdf3f1k got=e892kc8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 9: secret=p257om4x got=df98996? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 10: secret=jcd5awgu got=ca99u73? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 11: secret=eqdvhh97 got=oo9q9ko? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 12: secret=b6b876f0 got=y919rk8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 13: secret=3acfz2ek got=7dco9r1? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 14: secret=vu30xuli got=609757f? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 15: secret=pw0v51bx got=9494945? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 16: secret=bllogo4e got=9191s19? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 17: secret=rlqz2eml got=jy7ywy8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 18: secret=2u1l334o got=2vsv9v2? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 19: secret=v7bgkou4 got=197svs9? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 20: secret=t7ujvc0v got=130p8p8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 21: secret=9jyk0bwg got=gm6h1m9? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 22: secret=7607yc6w got=8iyhygy? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 23: secret=1ffb37xh got=hd88xd9? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 24: secret=mov7jwhs got=panarr8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 25: secret=cj2so8pf got=diro98b? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 26: secret=wchtsk6a got=p79896t? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 27: secret=xyhh20pp got=w79waft? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 28: secret=4cllp22b got=sxsusgs? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 29: secret=scfcjauw got=0omakd9? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 30: secret=dwg7gqze got=q89999q? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 31: secret=a4banl8v got=9mqf999? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 32: secret=1v5p0s06 got=8bq8j98? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 33: secret=g42o4exk got=79n87mx? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 34: secret=eh20xjud got=m7939kg? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 35: secret=susemzz4 got=l8j8n85? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 36: secret=m9yd96aq got=i585j54? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 37: secret=70s9enz2 got=d032e2e? 2/8 chars fail  0.1s
+[exp3] builtin_eq             trial 38: secret=h8o9r0f6 got=1zck1z8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 39: secret=2ii8k5c0 got=1w7q8wl? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 40: secret=7yl601a1 got=b8au0u0? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 41: secret=o3k80sti got=c989x9u? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 42: secret=s4zhho7y got=p6u6061? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 43: secret=rxthouqk got=9393837? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 44: secret=gedijc3s got=j171e19? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 45: secret=r4t6w2pd got=zy9y9yu? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 46: secret=rawwhm9e got=9vrv999? 1/8 chars fail  0.1s
+[exp3] builtin_eq             trial 47: secret=q0x8eymz got=8s8s8s8? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 48: secret=blv44fp7 got=7p7p7p7? 0/8 chars fail  0.1s
+[exp3] builtin_eq             trial 49: secret=7aq3xa19 got=6m6m6m6? 0/8 chars fail  0.0s
+[exp3] hmac_compare_digest    trial 0: secret=uvmi99p9 got=b8rcpje? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 1: secret=9u6hkx3b got=yfjdmio? 0/8 chars fail  0.5s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 2: secret=lnhxipwe got=8jzi11h? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 3: secret=flfw82oi got=9e9e9e9? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 4: secret=vnouv9yr got=8b8b8a8? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 5: secret=scg7zz2m got=9m989t9? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 6: secret=9q42kxig got=8q8q8q8? 1/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 7: secret=yi82l1kw got=7e7n7e7? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 8: secret=vh255xlq got=6k6b6k6? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 9: secret=v7cxxp0a got=5g5f555? 0/8 chars fail  0.3s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 10: secret=189mscuq got=4f4j4i4? 0/8 chars fail  0.3s (length step said 13; true length given)
+[exp3] hmac_compare_digest    trial 11: secret=z620m82b got=3j3i3h3? 0/8 chars fail  0.3s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 12: secret=hxcsky8e got=2e08292? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 13: secret=cfg3k45a got=zb1b1j1? 0/8 chars fail  0.2s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 14: secret=qema7bgt got=010s0s0? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 15: secret=mnxuflw2 got=zpz7zsz? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 16: secret=myp2u3bs got=ywy4yvy? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 17: secret=ugusvo3a got=xsxsx6x? 1/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 18: secret=7zuc31q6 got=wpwdwrw? 0/8 chars fail  0.5s (length step said 13; true length given)
+[exp3] hmac_compare_digest    trial 19: secret=ytd5w6nh got=vovgvhv? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 20: secret=y7f3gb91 got=uju4uku? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 21: secret=x84w7g0z got=tktdtgt? 1/8 chars fail  0.3s (length step said 13; true length given)
+[exp3] hmac_compare_digest    trial 22: secret=2l0mj61y got=sjsisas? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 23: secret=h8vew99x got=rvrrrnr? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 24: secret=xzb9ay8k got=qeq9qbq? 1/8 chars fail  0.3s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 25: secret=xph8z202 got=p8p8pip? 1/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 26: secret=gnfomqv4 got=ovo0o5o? 0/8 chars fail  0.5s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 27: secret=wqp7yz6a got=nmnhnkn? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 28: secret=myhidz27 got=m8vngum? 1/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 29: secret=n7j7m24o got=lolrl8l? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 30: secret=g18vx33s got=i7htgrf? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 31: secret=fqnkzz1h got=e4eaeye? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 32: secret=ui5b7t6f got=dnd1dad? 0/8 chars fail  0.3s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 33: secret=21f1mfwn got=cyc7c8c? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 34: secret=viuhho2r got=babbbnb? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 35: secret=e8l68q0p got=odo8o6o? 0/8 chars fail  0.4s (length step said 14; true length given)
+[exp3] hmac_compare_digest    trial 36: secret=1div1qt4 got=nynb2qn? 1/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 37: secret=h7o7tdl2 got=mvuhm8m? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 38: secret=z3g9xxit got=lwlfls7? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 39: secret=icq6mgvg got=8qhpgzf? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 40: secret=k1hjfcnn got=ene8eoe? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 41: secret=ak3trjzb got=dededk9? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 42: secret=f6skb98x got=cqcpcd5? 0/8 chars fail  0.4s (length step said 13; true length given)
+[exp3] hmac_compare_digest    trial 43: secret=b1wbh7bi got=sbblbas? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 44: secret=h0qqiap2 got=2f7g9zw? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 45: secret=vb2umjth got=nr5m8fe? 0/8 chars fail  0.5s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 46: secret=047n8wjm got=9lmim5m? 0/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 47: secret=8m2w1ly0 got=ljlg6lq? 1/8 chars fail  0.4s (length step said 15; true length given)
+[exp3] hmac_compare_digest    trial 48: secret=t9nvb3zz got=iolwvpx? 0/8 chars fail  0.5s (length step said 13; true length given)
+[exp3] hmac_compare_digest    trial 49: secret=zvg9u16h got=2jpmerb? 0/8 chars fail  0.4s (length step said 15; true length given)
+
+[exp3] summary
+  naive_compare          success 50/50  length found 50/50  chars correct 100% (random guessing ~3%)
+  builtin_eq             success 0/50  length found 50/50  chars correct 3% (random guessing ~3%)
+  hmac_compare_digest    success 0/50  length found 0/50  chars correct 2% (random guessing ~3%)
+
+All done in 3.7 min. Results are in: /home/mohammed/timing-side-channel/results_run2
