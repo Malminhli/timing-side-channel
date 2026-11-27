@@ -24,6 +24,9 @@
 
 ---
 
+
+<p align="center"><img src="assets/results_card.png" alt="Results summary card" width="640"></p>
+
 ## What is a timing side channel?
 
 A program can leak a secret not through its output but through **how long it takes** to produce it. A comparison that returns `False` at the *first wrong character* runs a little longer for every correct leading character. An attacker who can time it can recover the secret **one character at a time** (about A × L measurement groups for an alphabet of size A and length L) instead of trying all A^L possible secrets. This weakness class is [CWE-208: Observable Timing Discrepancy](https://cwe.mitre.org/data/definitions/208.html).
